@@ -12,6 +12,7 @@
     <form action="create.php" method="POST">
         <input type="text" name="name" placeholder="Nome" required>
         <input type="email" name="email" placeholder="Email" required>
+        <input type="idade" name="idade" placeholder="Idade" required>
         <button type="submit">Adicionar Usuário</button>
     </form>
     
