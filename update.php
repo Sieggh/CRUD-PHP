@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $idade = $_POST['idade'];
 
-    $sql = "UPDATE usuário SET name='$name', email='$email' WHERE id=$id";
+    $sql = "UPDATE usuário SET name='$name', email='$email', idade='$idade' WHERE id=$id";
 
     if ($conn->query($sql) === TRUE) {
         header("Location: index.php");
