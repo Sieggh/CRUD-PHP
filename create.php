@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $idade = $_POST['idade'];
 
-    $sql = "INSERT INTO users (name, email, idade) VALUES ('$name', '$email', '$idade')";
+    $sql = "INSERT INTO usuário (name, email, idade) VALUES ('$name', '$email', '$idade')";
 
     if ($conn->query($sql) === TRUE) {
         header("Location: index.php");
