@@ -3,7 +3,7 @@ include 'db.php';
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
-    $sql = "SELECT * FROM users WHERE id = $id";
+    $sql = "SELECT * FROM usuário WHERE id = $id";
     $result = $conn->query($sql);
     $user = $result->fetch_assoc();
 }
@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $idade = $_POST['idade'];
 
-    $sql = "UPDATE users SET name='$name', email='$email', idade='$idade' WHERE id=$id";
+    $sql = "UPDATE usuário SET name='$name', email='$email', idade='$idade' WHERE id=$id";
 
     if ($conn->query($sql) === TRUE) {
         header("Location: index.php");

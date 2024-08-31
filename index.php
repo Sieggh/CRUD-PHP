@@ -30,7 +30,7 @@
         <?php
         include 'db.php';
         
-        $sql = "SELECT * FROM users";
+        $sql = "SELECT * FROM usuário";
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
